@@ -1,0 +1,19 @@
+@import 'plugin/normalize.css';
+@import 'plugin/font-awesome.css';
+@import 'plugin/flexboxgrid.css';
+
+@import 'modules/theme.css';
+@import 'modules/welcome.css';
+@import 'modules/header.css';
+@import 'modules/footer.css';
+@import 'modules/answer.css';
+@import 'modules/question.css';
+@import 'modules/finish.css';
+@import 'modules/result.css';
+@import 'modules/bar-chart.css';
+@import 'modules/datatables.css';
+@import 'modules/hall-of-fame.css';
+@import 'modules/sweetalert.css';
+
+@import 'modules/layout.css';
+@import 'modules/ios.css';

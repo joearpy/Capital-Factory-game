@@ -1,0 +1,75 @@
+.hall-of-fame {
+	min-height: 540px;
+}
+
+.hall-of-fame #hall-of-fame-table_filter {
+	display: none !important;
+}
+
+.hall-of-fame #hall-of-fame-table_length {
+	display: none !important;
+}
+
+.hall-of-fame #hall-of-fame-table_paginate {
+	margin-top: 10px;
+}
+
+.hall-of-fame .header {
+	float: left; 
+	width: 100%; 
+	margin-bottom: 30px;
+}
+
+.hall-of-fame .header .title {
+	float: left;
+	padding-top: 4px;
+}
+
+.hall-of-fame .header .filters {
+	float: right;
+}
+
+.hall-of-fame .header .title span {
+	font-size: 20px;
+}
+
+.hall-of-fame .header .filters select {
+	padding: 5px 10px;
+}
+
+.hall-of-fame .header .filters select:disabled {
+	background-color: #f0f0f0;
+}
+
+#hall-of-fame-table thead tr th.place {
+	width: 60px !important;
+}
+
+#hall-of-fame-table thead tr th.name {
+	text-align: left;
+	padding-left:10px;
+}
+
+#hall-of-fame-table tbody tr td:first-child {
+	text-align: center;
+}
+#hall-of-fame-table tbody tr td:last-child {
+	text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+
+	.hall-of-fame {
+		min-height: 860px;
+	}
+
+	.hall-of-fame .header .title {
+		margin-bottom: 20px;
+		padding-top: 0;
+	}
+
+	.hall-of-fame .header .filters select {
+		margin: 0 0 5px 0;
+		width: 100%;
+	}
+}

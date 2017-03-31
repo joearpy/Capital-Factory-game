@@ -1,0 +1,448 @@
+.clearfix:after {
+	font-size: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: ' ';
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+.wrap {
+	box-sizing: border-box;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#content {
+	margin-top: 60px;
+}
+
+header {
+	box-sizing: border-box;
+	height: 105px;
+	margin-bottom: 30px;
+	padding-top: 25px;
+}
+
+footer {
+	height: 100px;
+	margin-bottom: 50px;
+}
+
+.placehold-left {
+	width: 714px;
+	min-height: 535px;
+}
+
+.placehold-left.placehold-left--narrow {
+	width: 490px;
+}
+
+.graph-wrapper,
+.placehold-left,
+.content-wrapper {
+	float: left;
+	box-sizing: border-box;
+}
+
+.welcome,
+.finsih-wrapper {
+	width: 659px;
+}
+
+.graph-wrapper {
+	width: 226px;
+	padding-left: 40px;
+}
+
+.graph-wrapper.wideFinish {
+	min-height: auto;
+}
+
+.wideFinish {
+	float: left;
+	width: 470px;
+}
+
+.content-inner {
+	box-sizing: border-box;
+	width: 714px;
+	padding-right: 24px;
+}
+
+.finish-form,
+.finish-wrapper {
+	float: left;
+	width: 430px;
+}
+
+.finish-wrapper {
+	margin-right: 24px;
+}
+
+input[type='button'],
+button {
+	float: right;
+}
+
+.finish-wrapper + #result-text {
+	display: none;
+}
+
+.play-again-container {
+	margin-right: 24px;
+}
+
+/* 
+*
+*	x 768 
+***************************************************************************/
+
+@media screen and (min-width: 768px) and (max-width: 977px ) {
+	.wrap {
+		overflow: hidden;
+		width: 960px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.timeline,
+	.wrap {
+		width: 674px;
+	}
+
+	.placehold-left,
+	.content-wrapper,
+	.content-inner {
+		width: 490px;
+	}
+
+	.content-wrapper {
+		min-height: auto;
+	}
+
+	.finish-wrapper + #result-text {
+		display: block;
+		width: 674px;
+		margin-bottom: 28px;
+	}
+
+	.graph-wrapper {
+		box-sizing: border-box;
+		width: 177px;
+		padding-left: 43px;
+	}
+
+	.answer {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.result-wrap {
+		float: left;
+		width: 291px;
+		margin-right: 25px;
+	}
+
+	.result-wrap .result-cell .circle {
+		line-height: 60px;
+		width: 60px;
+		height: 60px;
+	}
+
+	.graph-wrapper.wideFinish,
+	.finish-wrapper {
+		width: 674px;
+	}
+
+	.finish-wrapper .face-container {
+		display: none;
+	}
+
+	.graph-wrapper.wideFinish {
+		padding-left: 0;
+	}
+
+	.finish-wrapper h2 {
+		margin-top: 0;
+	}
+
+	.wideFinish #result-text {
+		display: none;
+		visibility: hidden;
+	}
+	.wideFinish .finish-form {
+		float: left;
+		width: 316px;
+	}
+
+	.finish-form label {
+		width: 60px;
+	}
+
+	.finish-form input[type='text'],
+	.finish-form input[type='email'] {
+		width: 215px;
+	}
+
+	.finish-form .sending-row span {
+		font-size: 10px;
+		font-weight: 500;
+		line-height: 14px;
+		display: inline-block;
+		width: 134px;
+		height: 55px;
+		padding-top: 15px;
+	}
+
+	.placehold-left.placehold-left--narrow {
+		width: 490px;
+		min-height: auto;
+	}
+
+	.play-again-container {
+		width: 674px;
+		float: left;
+		margin-bottom: 67px;
+	}
+}
+
+
+/* 480
+***************************************************************************/
+
+@media screen and (max-width: 480px) {
+	
+	.welcome-lang-select {
+		width: 100%;
+		padding: 0;
+	}
+
+	.welcome-lang-select .welcome-container {
+		border: 0;
+		margin-top: 0;
+	}
+
+	.welcome-lang-select {
+		margin-bottom: 50px;
+	}
+
+	.welcome-lang-select a {
+		font-size: 22px;
+		width: 80%;
+		margin: 0 0 15% 0;
+	}
+
+	header {
+		margin-bottom: 16px;
+	}
+
+	#content {
+		margin-top: 0;
+	}
+	.graph-wrapper.wideFinish,
+	.wrap,
+	.content-wrapper,
+	.timeline {
+		width: 260px;
+	}
+
+	.placehold-left {
+		width: 260px;
+		min-height: auto;
+	}
+
+	#metrics-right-container {
+		margin: 0 0 0 15px;
+		-webkit-transform: rotate(90deg);
+		        transform: rotate(90deg);
+		transform-origin: 70% 45% 0;
+		box-sizing: border-box;
+		padding: 0;
+		width: 120px;
+	}
+
+	.content-inner button {
+		margin: 10px 0 0 0;
+	}
+
+	.score {
+		display: block;
+	}
+
+	.content-inner {
+		width: 100%;
+		padding-right: 0;
+		text-align: justify;
+	}
+
+	.answer {
+		margin-right: 0;
+	}
+
+	.answer .answer-option {
+		width: 245px;
+	}
+
+	.graph-wrapper {
+		margin-right: 25px;
+	}
+
+	.played-line {
+		display: none;
+	}
+
+	.finish-wrapper {
+		width: 100%;
+	}
+
+	.finish-wrapper + #result-text {
+		display: block;
+		width: 260px;
+		margin-bottom: 30px;
+	}
+
+	.result-wrap .inner {
+		display: none;
+	}
+
+	footer {
+		display: block;
+		margin-bottom: 28px;
+		height: auto;
+	}
+
+	footer .line {
+		margin-bottom: 28px;
+	}
+
+	.welcome-wrapper {
+		height: 114px;
+		margin-bottom: 28px;
+	}
+
+	.welcome-wrapper img {
+		height: 108px;
+	}
+
+	.result-wrap {
+		display: block;
+		width: 260px;
+		margin: 0;
+		padding: 0;
+	}
+
+	#result-circle-skeleton {
+		float: left;
+		margin: 0 10px;
+	}
+
+	.result-wrap .result-cell .desc {
+		display: inline-block;
+		width: 64px;
+
+	}
+
+	.wideFinish .finish-form {
+		display: block;
+		float: left;
+		clear: both;
+		width: 260px;
+		margin-top: -7px;
+		padding-bottom: 0;
+	}
+
+	.placehold-left.placehold-left--narrow {
+		width: 100%;
+	}
+
+	.finish-form label {
+		width: 260px;
+	}
+
+	.finish-form input[type='text'],
+	.finish-form input[type='email'] {
+		width: 260px;
+	}
+
+	.finish-form .sending-row span {
+		font-size: 10px;
+		font-weight: 500;
+		line-height: 14px;
+		display: inline-block;
+		width: 260px;
+		height: 55px;
+		padding-top: 15px;
+	}
+
+	.finish-form .sending-row {
+		margin-top: 0;
+	}
+	button,
+	input[type='button'] {
+		float: none;
+		width: 260px;
+	}
+
+	.graph-wrapper {
+		width: 260px;
+		height: 176px;
+	}
+
+	.chart-wrapper .label {
+		bottom: -11px;
+		left: 21px;
+		width: 210px;
+		height: 20px;
+		-webkit-transform: rotate(-90deg);
+		        transform: rotate(-90deg);
+		-webkit-transform-origin: 0 0 0;
+		        transform-origin: 0 0 0;
+		text-align: left;
+	}
+
+	.chart-wrapper .xs-chart {
+		position: absolute;
+		bottom: 135px;
+		left: 99px;
+		display: inline-block;
+		width: 130px;
+		height: 20px;
+		-webkit-transform: rotate(-90deg);
+		        transform: rotate(-90deg);
+		-webkit-transform-origin: -50px 64px;
+		        transform-origin: -50px 64px;
+		text-align: right;
+	}
+
+	.chart-wrapper .xs-chart .clearfix {
+		display: none;
+	}
+
+	.bar-container {
+		height: 260px;
+	}
+
+	.bar {
+		bottom: 130px;
+	}
+	.graph-wrapper.wideFinish  {
+		height: auto;
+	}
+
+	.play-again-container {
+		margin-bottom: 28px;
+	}
+}

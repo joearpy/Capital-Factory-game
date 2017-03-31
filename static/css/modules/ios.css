@@ -1,0 +1,300 @@
+/*
+	iPad in portrait & landscape
+**********************************************************************************/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+
+	#left-container .question-wrapper {
+		display: block !important;
+	} 
+
+	#left-container .question-text {
+		display: block !important;
+		padding: 20px 0;
+	} 
+
+	#left-container .answer {
+		display: block !important;
+		margin: 0;
+		margin-bottom: 20px;
+		float: left;
+	} 
+
+	#left-container .answer .answer-text {
+		display: block !important;
+		width: 385px;
+		float: left;
+	} 
+
+	#left-container .face-container {
+		margin-bottom: 28px;
+	}
+
+	#right-container #right-container .result-wrap  {
+		display: block !important;
+		width: 100%;
+		text-align: center;
+	}
+
+	#right-container #result-circle-skeleton {
+		display: inline-block;
+	}
+
+	#right-container .chart-wrapper .label {
+		-webkit-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		        transform: rotate(-90deg);
+	}
+
+	#right-container .result-wrap  {
+		margin-right: 0;
+	}
+
+	#right-container .result-wrap .inner {
+		display: none;
+	}
+
+	#right-container .result-wrap .result-cell {
+		margin: 0 5px;
+	}
+
+	.placehold-left.placehold-left--narrow {
+		min-height: initial;
+		height: initial;
+		margin-bottom: 25px;
+	}
+
+	.finish-wrapper + #result-text {
+		margin-bottom: 20px;
+	}
+
+	.finish-form label {
+		width: 65px;
+		min-width: 65px;
+	}
+
+	footer .sharing .line  {
+		width: 470px;
+		height: 1px;
+		float: right;
+		background: #000;
+		margin-top: 19px;
+	}
+}
+
+/*
+	Retina iPad in portrait & landscape
+**********************************************************************************/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) { 
+
+	#left-container .question-wrapper {
+		display: block !important;
+	} 
+
+	#left-container .question-text {
+		display: block !important;
+		padding: 20px 0;
+	} 
+
+	#left-container .answer {
+		display: block !important;
+		margin: 0;
+		margin-bottom: 20px;
+		float: left;
+	} 
+
+	#left-container .answer .answer-text {
+		display: block !important;
+		width: 385px;
+		float: left;
+	} 
+
+	#left-container .face-container {
+		margin-bottom: 28px;
+	}
+
+	#right-container #right-container .result-wrap  {
+		display: block !important;
+		width: 100%;
+		text-align: center;
+	}
+
+	#right-container #result-circle-skeleton {
+		display: inline-block;
+	}
+
+	#right-container .chart-wrapper .label {
+		-webkit-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		        transform: rotate(-90deg);
+	}
+
+	#right-container .result-wrap  {
+		margin-right: 0;
+	}
+
+	#right-container .result-wrap .inner {
+		display: none;
+	}
+
+	#right-container .result-wrap .result-cell {
+		margin: 0 5px;
+	}
+
+	.placehold-left.placehold-left--narrow {
+		min-height: initial;
+		height: initial;
+		margin-bottom: 25px;
+	}
+
+	.finish-wrapper + #result-text {
+		margin-bottom: 20px;
+	}
+
+
+	.finish-form label {
+		width: 65px;
+		min-width: 65px;
+	}
+
+	footer .sharing .line  {
+		width: 470px;
+		height: 1px;
+		float: right;
+		background: #000;
+		margin-top: 19px;
+	}
+}
+
+/*
+	iPad 1 & 2 in portrait & landscape
+**********************************************************************************/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){ 
+
+	#left-container .question-wrapper {
+		display: block !important;
+	} 
+
+	#left-container .question-text {
+		display: block !important;
+		padding: 20px 0;
+	} 
+
+	#left-container .answer {
+		display: block !important;
+		margin: 0;
+		margin-bottom: 20px;
+		float: left;
+	} 
+
+	#left-container .answer .answer-text {
+		display: block !important;
+		width: 385px;
+		float: left;
+	} 
+
+	#left-container .face-container {
+		margin-bottom: 28px;
+	}
+
+	#right-container #right-container .result-wrap  {
+		display: block !important;
+		width: 100%;
+		text-align: center;
+	}
+
+	#right-container #result-circle-skeleton {
+		display: inline-block;
+	}
+
+	#right-container .chart-wrapper .label {
+		-webkit-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		        transform: rotate(-90deg);
+	}
+
+	#right-container .result-wrap  {
+		margin-right: 0;
+	}
+
+	#right-container .result-wrap .inner {
+		display: none;
+	}
+
+	#right-container .result-wrap .result-cell {
+		margin: 0 5px;
+	}
+
+	.placehold-left.placehold-left--narrow {
+		min-height: initial;
+		height: initial;
+		margin-bottom: 25px;
+	}
+
+	.finish-wrapper + #result-text {
+		margin-bottom: 20px;
+	}
+
+
+	.finish-form label {
+		width: 65px;
+		min-width: 65px;
+	}
+
+	footer .sharing .line  {
+		width: 470px;
+		height: 1px;
+		float: right;
+		background: #000;
+		margin-top: 19px;
+	}
+}
+
+
+/* 
+	iPhone 
+**********************************************************************************/
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+	.question-wrapper {
+		display: block !important;
+	}
+
+	.question-text {
+		display: block !important;
+		padding: 20px 0;
+	}
+
+	.answer {
+		display: block;
+		margin: 0;
+		margin-bottom: 20px;
+		float: left !important;
+	}
+
+	.chart-wrapper .label {
+		-webkit-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		        transform: rotate(-90deg);
+	}
+}
+
+/*
+	iPad landscapes
+**********************************************************************************/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	footer .sharing .line  {
+		width: 760px;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	footer .sharing .line  {
+		width: 760px;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  {
+	footer .sharing .line  {
+		width: 760px;
+	}
+}

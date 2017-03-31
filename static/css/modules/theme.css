@@ -1,0 +1,43 @@
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+        background: #f0f1f2 !important;
+	color: #26272b !important;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 300;
+}
+
+a {
+	color: #009ddc;
+}
+
+input[type='button'],
+button {
+	font-size: 24px;
+	font-weight: 400;
+	font-weight: 300;
+	padding: 13px 49px;
+	color: #fff;
+	border: 0;
+	border-radius: 10px;
+	background: #1A1919;
+}
+input[type='button']:hover,
+input[type='button']:active,
+input[type='button']:focus,
+button:hover,
+button:active,
+button:focus {
+	outline: none;
+	background: #898989;
+}
+
+@media screen and (max-width: 768px) {
+	input[type='button'],
+	button {
+		font-weight: 300;
+		padding: 8px 39px;
+	}
+}

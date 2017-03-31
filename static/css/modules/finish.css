@@ -1,0 +1,63 @@
+.finish-wrapper {
+	text-align: justify;
+}
+.finish-wrapper h2 {
+	font-size: 36px;
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+
+.finish-wrapper .face-container {
+	width: 100%;
+	margin-bottom: 32px;
+}
+
+.finish-form {
+	margin-top: 23px;
+}
+
+.finish-form .form-row {
+	float: left;
+	width: 100%;
+	margin-bottom: 14px;
+}
+
+.finish-form label {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 38px;
+	display: inline-block;
+	float: left;
+	min-width: 90px;
+	height: 36px;
+}
+
+.finish-form input[type='text'],
+.finish-form input[type='email'] {
+	float: left;
+	width: 335px;
+	height: 32px;
+	border: 1px solid #898989;
+	border-radius: 5px;
+}
+
+.finish-form input.error {
+	color: red;
+	border-color: red;
+}
+
+.finish-form .sending-row {
+	margin-top: 26px;
+}
+
+.finish-form .sending-row span {
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 55px;
+	height: 55px;
+}
+
+.finish-form .sending-row span a {
+	text-decoration: underline;
+	color: #000;
+}

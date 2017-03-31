@@ -1,0 +1,70 @@
+.result-wrap {
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+	padding: 0 20px 13px 20px;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+
+.result-wrap .inner {
+	position: absolute;
+	z-index: 0;
+	top: 41%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #898989;
+}
+
+#result-circle-skeleton {
+	z-index: 1;
+}
+
+.result-wrap .result-cell {
+	box-sizing: border-box;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.result-wrap .result-cell .value {
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.result-wrap .result-cell .value small {
+	font-size: 14px;
+}
+
+.result-wrap .result-cell .circle {
+	line-height: 75px;
+	width: 75px;
+	height: 75px;
+	margin: 0 auto;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	text-align: center;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	background: #1A1919;
+	box-shadow: 0 0 0 5px #ff0;
+}
+
+.result-wrap .result-cell .desc {
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+}

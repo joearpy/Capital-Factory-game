@@ -1,0 +1,31 @@
+.content-face-box {
+	position: relative;
+	width: 387px;
+	height: 200px;
+	margin-bottom: 69px;
+	background-image: url('/static/images/question-bg.png');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+}
+
+.content-face-box img {
+	position: absolute;
+	bottom: 0;
+	left: 5px;
+	display: block;
+	float: left;
+	height: 169px;
+}
+
+.content-face-box-text {
+	font-size: 24px;
+	font-weight: 500;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 222px;
+	text-align: right;
+	text-transform: uppercase;
+	color: #fff;
+}

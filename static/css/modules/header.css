@@ -1,0 +1,75 @@
+/*
+	Logo's
+==========================================================================*/
+.site-logo {
+	float: left;
+}
+
+/*
+	Score
+==========================================================================*/
+
+.score {
+	font-size: 14px;
+	line-height: 53px;
+	float: left;
+        margin-top: 9px;
+	margin-left: 20px;
+	text-transform: capitalize;
+}
+
+.score em {
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	margin-left: 10px;
+}
+/*
+	Timeline
+==========================================================================*/
+.timeline {
+	width: 960px;
+	margin: 26px 0 0 0;
+	border-top: 1px solid #005EB8;
+}
+
+.timeline .cell {
+	font-size: 12px;
+	width: 0;
+	height: 25px;
+	transition: width 1s ease-in-out;
+	text-align: right;
+	color: #1A1919;
+	border-top: 5px solid #1A1919;
+}
+
+.timeline.disable {
+	border-color: #000;
+}
+.timeline.disable .cell {
+	display: none;
+}
+
+@media screen and (max-width: 480px) {
+	header b {
+		display: none;
+	}
+	.site-logo img {
+		height: 44px;
+	}
+
+	.score {
+		font-size: 12px;
+		line-height: 45px;
+
+		float: right;
+
+		margin-left: 5px;
+	}
+
+	.score em {
+		font-size: 14px;
+
+		margin-left: 5px;
+	}
+}

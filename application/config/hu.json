@@ -1,0 +1,374 @@
+{
+	"logo": "/static/images/factory-logo.png",
+	"welcome": "views/welcome.html",
+	"finish": "views/finish.html",
+	"points": 0,
+	"metrics": [
+		{
+			"id": "profit",
+			"label": "Profit",
+			"unit": "oz.",
+			"initial": 900,
+			"min": -200,
+			"max": 1800,
+			"color": {
+				"plus": "#1A1919",
+				"minus": "#ff0000"
+			},
+			"multiplier": 1
+		},
+		{
+			"id": "marketshare",
+			"label": "Piaci részesedés",
+			"unit": "%",
+			"initial": 17,
+			"min": 0,
+			"max": 40,
+			"color": {
+				"plus": "#1A1919",
+				"minus": "#ff0000"
+			},
+			"multiplier": 20
+		},
+		{
+			"id": "inventory",
+			"label": "Raktárkészlet",
+			"unit": "TEU",
+			"initial": 850,
+			"min": 0,
+			"max": 1500,
+			"color": {
+				"plus": "#1A1919",
+				"minus": "#ff0000"
+			},
+			"multiplier": 1
+		}
+	],
+	"staffs": [
+		{
+			"id": "1",
+			"name": "Alexandra",
+			"position": "HR igazgató",
+			"image": "images/face-1.png"
+		},
+		{
+			"id": "2",
+			"name": "Jakab",
+			"position": "Főmérnök",
+			"image": "images/face-2.png"
+		},
+		{
+			"id": "3",
+			"name": "Róbert",
+			"position": "operációs vezető",
+			"image": "images/face-3.png"
+		},
+		{
+			"id": "4",
+			"name": "Andrea",
+			"position": "Pénzügyi igazgató",
+			"image": "images/face-4.png"
+		},
+		{
+			"id": "5",
+			"name": "Balázs",
+			"position": "Értékesítési igazgató",
+			"image": "images/face-5.png"
+		}
+	],
+	"tasks" : [
+		{
+			"id" : 1,
+			"question": "Motiválnunk kell a munkatársainkat! Lelkesedésük egyre rosszabb, pedig a munkabérjük a piaci átlagnál magasabb. Mit tegyünk a fluktuáció elkerülése érdekében?",
+			"staff": "1",
+			"answers": [
+				{
+					"label": "Szerintem ennél többet nem kell tennünk. Ha nekik nem elég, hogy a világ egyik legnagyobb vállalatánál dolgozhatnak, akkor menjenek. Minden ember pótolható.",
+					"time": 30,
+					"metrics": {
+						"profit": -90,
+						"marketshare": -3,
+						"inventory": 80
+					},
+					"next": 2
+				},
+				{
+					"label": "Hagyjuk, hogy a dolgozó bátran ötletelhessen. Engedjük szabadjára a kreatívitását. Vonjuk bele a csapatok döntésébe minden dolgozót, érezzék, hogy sajátjuk amit csinálnak. Illetve vezessük be a fél évenkénti teljesítményértékelést, aminek a kidolgozására önt bízom meg, Alexandra.",
+					"time": 30,
+					"metrics": {
+						"profit": 90,
+						"marketshare": 2,
+						"inventory": 30
+					},
+					"next": 2
+				},
+				{
+					"label": "Azok, akik jelenleg a munkatársaink azoknál hagyjuk meg a fizetésüket és vezessük be a bónuszrendszert, amit egy fél évenkénti teljesítményértékelés alapján kaphat meg a dolgozó. Értékelések alapján +1 havi bér lesz elérhető minden év végén.",
+					"time": 30,
+					"metrics": {
+						"profit": 12,
+						"marketshare": 2,
+						"inventory": 20
+					},
+					"next": 2
+				}
+			]
+		},
+		{
+			"id": 2,
+			"question": "A fejlesztéseink összességben kiválóan haladnak. Viszont van néhány szoftver, amiben nem értünk el sikereket. Mit tegyünk?",
+			"staff": "2",
+			"answers": [
+				{
+					"label": "Csoportosítson át néhány mérnököt ezekre a projektekre, hagy lássuk, hogy többen mit tudnak kihozni belőle.",
+					"time": 20,
+					"metrics": {
+						"profit": 35,
+						"marketshare": 1,
+						"inventory": -10
+					},
+					"next": 3
+				},
+				{
+					"label": "Zárjuk le azokat a projekteket, ha eddig nincs eredmény, akkor ezek után sem lesz.",
+					"time": 20,
+					"metrics": {
+						"profit": -20,
+						"marketshare": 0,
+						"inventory": -10
+					},
+					"next": 3
+				},
+				{
+					"label": "Vegyünk fel új mérnököket a projektekre.",
+					"time": 20,
+					"metrics": {
+						"profit": 15,
+						"marketshare": 2,
+						"inventory": 5
+					},
+					"next": 3
+				}
+			]
+		},
+		{
+			"id": 3,
+			"question": "Úgy látom, hogy igény lenne egy szoftverre, ami támogatja a mérnökök, HR-esek és pénzügyesek munkáját. Ehhez szükségem lenne új munkaerőre is.",
+			"staff": "3",
+			"answers": [
+				{
+					"label": "Remek ötlet, Róbert! Viszont, ami az új munkaerőt illeti, a költségvetésbe maximum egy gyakornok fog beleférni.",
+					"time": 20,
+					"metrics": {
+						"profit": 15,
+						"marketshare": 1,
+						"inventory": 2
+					},
+					"next": 4
+				},
+				{
+					"label": "Eddig is jól megvoltak, e nélkül is meglesznek.",
+					"time": 20,
+					"metrics": {
+						"profit": -15,
+						"marketshare": -1,
+						"inventory": -10
+					},
+					"next": 4
+				},
+				{
+					"label": "Jó ötlet, megengedhetjük magunknak, hogy két új junior munkaerőt is felvegyünk erre a projekt munkára. Nézzük meg, hogy mit tudnak és talán hosszabb távon is tudunk együtt működni velük.",
+					"time": 20,
+					"metrics": {
+						"profit": 20,
+						"marketshare": 1,
+						"inventory": 2
+					},
+					"next": 4
+				}
+			]
+		},
+		{
+			"id": 4,
+			"question": "A tavalyi évben csökkent az árbevételünk, ami rossz hír. Szerintem szükség lenne néhány olyan módosításra, amiért nem nagy kár.",
+			"staff": "4",
+			"answers": [
+				{
+					"label": "Rendben, mivel a cafeteria adható, de nem kötelező, ezért ezt szüntessük meg.",
+					"time": 30,
+					"metrics": {
+						"profit": 10,
+						"marketshare": 1,
+						"inventory": -12
+					},
+					"next": 5
+				},
+				{
+					"label": "Nem tudunk mit csökkenteni. Mindenre szükség van.",
+					"time": 30,
+					"metrics": {
+						"profit": -5,
+						"marketshare": 1,
+						"inventory": 15
+					},
+					"next": 5
+				},
+				{
+					"label": "A költségeket ne csökkentsük, helyette profitot növeljük a termeléssel és megrendelőkkel.",
+					"time": 30,
+					"metrics": {
+						"profit": 20,
+						"marketshare": 2,
+						"inventory": 20
+					},
+					"next": 5
+				}
+			]
+		},
+		{
+			"id": 5,
+			"question": "Az agyvizsgáló szofverünk nagy sikereket ért el magánszektorban. Érdemes lenne az állami szférában is értékesíteni.",
+			"staff": "5",
+			"answers": [
+				{
+					"label": "Plusz bevétel, erre gondolhattunk volna már korábban is.",
+					"time": 30,
+					"metrics": {
+						"profit": 25,
+						"marketshare": 2,
+						"inventory": 30
+					},
+					"next": 6
+				},
+				{
+					"label": "Egy állami intézmény nem tudja megfizetni az eszközeinket, hagyjuk.",
+					"time": 30,
+					"metrics": {
+						"profit": -20,
+						"marketshare": -3,
+						"inventory": 25
+					},
+					"next": 6
+				},
+				{
+					"label": "Végezzen piackutatást, ott ahol még wc papírra sem futja, őket hagyjuk ki a „buliból”. A többieknél igen a válaszom.",
+					"time": 30,
+					"metrics": {
+						"profit": 15,
+						"marketshare": 1,
+						"inventory": 30
+					},
+					"next": 6
+				}
+			]
+		},
+		{
+			"id": 6,
+			"question": "Felmerült egy ötlet, hogy a rendszerünket összeintegráljuk a nemzetközi kollégákkal is. Jó ötletnek tartom!",
+			"staff": "3",
+			"answers": [
+				{
+					"label": "Róbert, magának csak jó ötletei vannak. Legyen!",
+					"time": 30,
+					"metrics": {
+						"profit": 30,
+						"marketshare": 0,
+						"inventory": 0
+					},
+					"next": 7
+				},
+				{
+					"label": "Először csak próbáljuk meg a szomszédos országokkal, ha működik a teszt időszakon, akkor mehet.",
+					"time": 30,
+					"metrics": {
+						"profit": 15,
+						"marketshare": 0,
+						"inventory": 0
+					},
+					"next": 7
+				},
+				{
+					"label": "Tökéletesen megvoltunk nélkülük és ők is nélkülünk, hagyjuk!",
+					"time": 30,
+					"metrics": {
+						"profit": -20,
+						"marketshare": -1,
+						"inventory": -10
+					},
+					"next": 7
+				}
+			]
+		},
+		{
+			"id": 7,
+			"question": "Csökkentettük a gyártást, ezért kevesebb munkásra is van szükség. Mit tegyünk?",
+			"staff": "1",
+			"answers": [
+				{
+					"label": "A fluktuáció a legrosszabb, ami történhet. A dolgozóinkat megtartjuk, nem változtatunk a béreken és a létszámon sem.",
+					"time": 60,
+					"metrics": {
+						"profit": -10,
+						"marketshare": -1,
+						"inventory": 20
+					},
+					"next": 8
+				},
+				{
+					"label": "Év végéig bevezetjük a 4 napos munkahetet, valamint csökkentjük a gyártósoron dolgozó embereink fizetését.",
+					"time": 60,
+					"metrics": {
+						"profit": 10,
+						"marketshare": 1,
+						"inventory": 10
+					},
+					"next": 8
+				},
+				{
+					"label": "Ha nincs gyártás, akkor ennyi dolgozóra nincs szükség. Néhányat el kell küldenie, Alexandra.",
+					"time": 60,
+					"metrics": {
+						"profit": -15,
+						"marketshare": -1,
+						"inventory": -20
+					},
+					"next": 8
+				}
+			]
+		},
+		{
+			"id": 8,
+			"question": "Érkezett egy csehországi megrendelés, egy magán cégtől. Eddig ők a csehországi gyárunktól rendeltek, de azt hallották, hogy nálunk még minőségibb terméket tudnak beszerezni. Viszont ehhez szakítanunk kell azzal, hogy csak belföldre gyárunk és nem a cseh gyárunk szolgálja ki őket.",
+			"staff": "2",
+			"answers": [
+				{
+					"label": "Balázs, maga is szereti a pénzt, nem? Szerintem ez ne zavarjon minket, ha ezt hallották, akkor adjuk el nekik.",
+					"time": 10,
+					"metrics": {
+						"profit": 45,
+						"marketshare": 3,
+						"inventory": -20
+					}
+				},
+				{
+					"label": "Megtisztelő, de nem szakíthatunk a politikánkkal, a Cseh gyárunk is ugyanolyan minőségben gyárt. Mi nem küldhetünk oda, terméket, megértette?",
+					"time": 10,
+					"metrics": {
+						"profit": -45,
+						"marketshare": -2,
+						"inventory": 30
+					}
+				},
+				{
+					"label": "A gyártás idejéig küldjük el a Cseh gyárunkba az embereinket, akik a projekt végeztél visszajönnek.",
+					"time": 10,
+					"metrics": {
+						"profit": -30,
+						"marketshare": -2,
+						"inventory": -60
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,153 @@
+.welcome-lang-select {
+	width: 760px;
+	margin: 20px auto;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.welcome-lang-select .ge-logo {
+	display: block;
+        width: 45%;
+	margin: 15px auto;
+}
+
+.welcome-lang-select .welcome-container {
+	display: inline-block;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding: 60px;
+
+}
+
+.welcome-lang-select {
+	display: block;
+	margin: 0 auto 30px auto;
+}
+
+.welcome-lang-select a {
+	display: inline-block;
+        width: 100%;
+	margin-right: 20px;
+	padding: 24px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 12px;
+	background: #1A1919;
+}
+
+.welcome-lang-select a img {
+	margin-right: 5px;
+}
+
+.welcome {
+	text-align: center;
+}
+
+.welcome-wrapper {
+	position: relative;
+	width: 100%;
+	height: 338px;
+	margin-bottom: 37px;
+	background-image: url('/static/images/question-bg.png');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+}
+
+.welcome-wrapper img {
+	position: absolute;
+	bottom: 0;
+	left: 65px;
+	display: block;
+	float: left;
+	height: 308px;
+}
+
+.welcome-wrapper-text {
+	font-size: 38px;
+	font-weight: 700;
+	position: absolute;
+	top: 40px;
+	right: 35px;
+	width: 290px;
+	padding-bottom: 28px;
+	text-align: right;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.welcome-wrapper-text:after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: block;
+	width: 71px;
+	height: 5px;
+	content: '';
+	background: #ff0;
+}
+
+.welcome-text {
+	text-align: justify;
+}
+
+.welcome-text h2 {
+	font-size: 36px;
+	font-weight: 300;
+}
+
+
+.played-line {
+	float: left;
+	width: 489px;
+	height: 1px;
+	margin-top: 27px;
+	border: 0;
+	background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+	.welcome-wrapper {
+		width: 100%;
+		height: 213px;
+	}
+
+	.welcome-wrapper img {
+		height: 202px;
+	}
+
+	#metrics-right-container {
+		width: 147px;
+	}
+
+	.played-line {
+		width: 269px;
+	}
+
+	.welcome-wrapper-text {
+		font-size: 28px;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.welcome-lang-select {
+	}
+
+	.welcome-wrapper {
+		width: 100%;
+	}
+
+	.welcome-wrapper img {
+		left: 17px;
+	}
+
+
+	.welcome-wrapper-text {
+		font-size: 14px;
+		top: 20px;
+		right: 20px;
+		width: 125px;
+	}
+}
